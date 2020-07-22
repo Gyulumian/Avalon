@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        print current time 
+    </title> 
+</head> 
+  
+<body> 
+    <script type="text/javascript"> 
+        var myDate = new Date();  
+        var hours = myDate.getHours(); 
+        var ampm = hours >= 12 ? 'PM' : 'AM'; 
+        hours = hours % 12; 
+        hours = hours ? hours : 12; 
+        var minutes = myDate.getMinutes(); 
+        minutes = minutes < 10 ? '0' + minutes : minutes; 
+        var myTime = hours + ":" + minutes + "   " + ampm; 
+        document.write("\tCurrent time is : " + myTime); 
+    </script> 
+</body> 
+  
+</html> 
